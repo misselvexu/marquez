@@ -11,6 +11,7 @@ import static marquez.common.models.CommonModelGenerator.newDatasetName;
 import static marquez.common.models.CommonModelGenerator.newDescription;
 import static marquez.common.models.CommonModelGenerator.newFields;
 import static marquez.common.models.CommonModelGenerator.newJobType;
+import static marquez.common.models.CommonModelGenerator.newLifecycleStateChange;
 import static marquez.common.models.CommonModelGenerator.newLocation;
 import static marquez.common.models.CommonModelGenerator.newNamespaceName;
 import static marquez.common.models.CommonModelGenerator.newOwnerName;
@@ -59,9 +60,11 @@ public final class ServiceModelGenerator extends Generator {
         newFields(4),
         newTagNames(2),
         null,
+        newLifecycleStateChange(),
         newDescription(),
         null,
-        null);
+        null,
+        false);
   }
 
   /** Returns a new {@link DbTableMeta} object. */
